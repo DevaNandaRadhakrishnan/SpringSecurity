@@ -6,7 +6,7 @@ pipeline {
 	}
 	stages {
 		stage('Clone'){
-			steps {git url:'https://github.com/DevaNandaRadhakrishnan/.git', branch:'main'}
+			steps {git url:'https://github.com/DevaNandaRadhakrishnan/SpringSecurity.git', branch:'main'}
 		}
 // 		stage('Pre-Steps'){
 // 		steps{
