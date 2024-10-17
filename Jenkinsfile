@@ -8,13 +8,7 @@ pipeline {
 		stage('Clone'){
 			steps {git url:'https://github.com/DevaNandaRadhakrishnan/SpringSecurity.git', branch:'main'}
 		}
-// 		stage('Pre-Steps'){
-// 		steps{
-// 		    bat '''
-// 		        docker stop auth-container || true
-// 		        docker rm auth-container || true
-// 		        docker rmi -f gateway: latest || true
-// 		    '''}}
+
 		stage('Build'){
 			steps {bat "mvn clean install -DskipTests"}
 		}
